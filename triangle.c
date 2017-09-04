@@ -9,7 +9,7 @@ int die(const char * msg);
 int main() {
 	double side;
 	printf("side: ");
-	if (scanf_s("%lf", &side) != 1) die("input failure");
+	if (scanf("%lf", &side) != 1) die("input failure");
 	double area;
 	area = areaFromSide(side);
 	printf("The area is %f\n", area);
