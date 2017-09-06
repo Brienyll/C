@@ -15,7 +15,7 @@ int main() {
 	scanf("%i", &linesToPrint);
 	if (linesPerPage < 1 || linesPerPage > 999) die("input failure");
 	pages = pagesRequired(linesPerPage, linesToPrint);
-	printf("We need %i page/s", pages);
+	printf("We need %i page/s\n", pages);
 }
 
 double pagesRequired(double linesPerPage, double linesToPrint) {
