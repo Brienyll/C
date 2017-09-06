@@ -13,7 +13,7 @@ int main() {
 	scanf("%lf%lf%lf", &a, &b, &c);
 	if (c > b + a || b > a + c || a > b + c ) die("input failure");
 	area = areaTriangle(a, b, c);
-	printf("The area of the triangle is: %.01lf", area);
+	printf("The area of the triangle is: %.01lf\n", area);
 }
 
 double areaTriangle(double a, double b, double c) {
