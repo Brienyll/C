@@ -1,3 +1,5 @@
+//cs 539, HW2, Francell Angeles
+
 #include <stdio.h>
 #include <math.h>
 #include <stdlib.h>
