@@ -12,7 +12,7 @@ int main() {
 	unsigned heads, legs, chickenT, goatsT;
 	printf("heads legs: ");
 	scanf("%u%u", &heads, &legs);
-	if ((legs%2 == 1) || (heads * 2 > legs ) || (heads * 4 < legs )) die("input failure");
+	if ((legs%2 == 1) || (heads * 2 > legs ) || (heads * 4 < legs )) die("anotomically impossible");
 	chickenT = chickens(heads, legs);
 	goatsT = goats( heads, legs);
 	printf("That's %u chickens and %u goats\n", chickenT, goatsT);
