@@ -13,12 +13,18 @@ int main () {
   printf("1 1.33333 2 == %f %f %f\n", min, av, max);
   int a[] = {1, 2, 1};
   
-  describe(NULL, NULL);
-  describe(a, a);
-  describe(a, a+1);
-  describe(a, a+2);
-  describe(a+1, a+2);
-  describe(a+2, a+1);
-  describe(a+2, a);
-  describe(a+1, a);
-  }
+ void minAvMax(double * min, double * av, double * max, const double ar[], unsigned els) {
+  *min = *max = *av = ar[0];
+   double sum = 0;
+   for (unsigned i = 0; i < els; i++){
+    if(*min > ar[i]){
+      *min = ar[i];
+    }
+   if (*max < ar[i]){
+    *max = ar[i];
+   }
+   
+   sum += ar[i];
+   *av = sum / els;
+   }
+ }
